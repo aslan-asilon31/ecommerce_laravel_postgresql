@@ -38,6 +38,53 @@ class RouteServiceProvider extends ServiceProvider
                 ->prefix('api')
                 ->group(base_path('routes/Routes/master_data/User/user.php'));
 
+                
+            // Products
+            Route::middleware('api')
+            ->prefix('api')
+            ->group(base_path('routes/Routes/master_data/Product/product.php'));
+
+            // Product Image
+            Route::middleware('api')
+                ->prefix('api')
+                ->group(base_path('routes/Routes/master_data/Product/product_image.php'));
+
+            // Product Detail
+            Route::middleware('api')
+                ->prefix('api')
+                ->group(base_path('routes/Routes/master_data/Product/product_detail.php'));
+
+            // Category
+            Route::middleware('api')
+                ->prefix('api')
+                ->group(base_path('routes/Routes/master_data/Category/category.php'));
+
+            // Category Detail
+            Route::middleware('api')
+                ->prefix('api')
+                ->group(base_path('routes/Routes/master_data/Category/category_detail.php'));
+
+            // Order
+            Route::middleware('api')
+                ->prefix('api')
+                ->group(base_path('routes/Routes/master_data/Order/order.php'));
+
+            // Review
+            Route::middleware('api')
+                ->prefix('api')
+                ->group(base_path('routes/Routes/master_data/Review/review.php'));
+
+            // Transaction
+            Route::middleware('api')
+                ->prefix('api')
+                ->group(base_path('routes/Routes/master_data/Transaction/transaction.php'));
+
+            // Payment
+            Route::middleware('api')
+                ->prefix('api')
+                ->group(base_path('routes/Routes/master_data/Payment/payment.php'));
+
+
             Route::middleware('web')
                 ->group(base_path('routes/web.php'));
         });
