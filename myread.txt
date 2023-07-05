@@ -1,0 +1,18 @@
+src tutorial docker = https://www.youtube.com/watch?v=zmoqsUqbE0A
+
+
+========== dokumentasi API using swagger 
+-  https://www.youtube.com/watch?v=p3Z3RR091Wk
+- https://www.youtube.com/watch?v=OhNlhvFG96M
+
+----generate : php artisan l5-swagger:generate
+
+===== when cannot push to github 
+after generate new token
+git remote set-url origin https://<token>@github.com/<username>/<repo>
+
+
+
+
+==== API authentication using JWT 
+https://santrikoding.com/tutorial-laravel-jwt-3-installasi-dan-konfigurasi-jwt-json-web-token
